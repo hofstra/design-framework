@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+@import "mixins";
+@import "vars";
+@import "baseline";
+@import "ui";
+
+// Force SASS to include the UTF-8 charset notice
+.force-UTF-8 {
+    content: "¡";
+}

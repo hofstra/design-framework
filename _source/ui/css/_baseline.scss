@@ -1,0 +1,23 @@
+* {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* IE10/11 Metro responsive
+ Required for Windows 8 Metro split-screen snapping with IE10 and IE11
+ Source: http://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/ */
+@-ms-viewport {
+    width: device-width;
+}

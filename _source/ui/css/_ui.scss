@@ -1,0 +1,111 @@
+body {
+    @include font-smoothing();
+    background: $body-background;
+    font-family: sans-serif;
+}
+
+a {
+    color: #003594;
+}
+
+.brand-bar {
+    @include cf();
+    background: #FFFFFF;
+    height: 82px;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    width: 100%;
+}
+    .brand-logo {
+        display: inline-block;
+        float: left;
+    }
+    .brand-tagline {
+        display: inline-block;
+        float: right;
+        font-family: sans-serif;
+        height: 42px;
+    }
+        .brand-tagline p {
+            color: rgba(0, 0, 0, .75);
+            font-size: 14px;
+            font-style: italic;
+            line-height: 42px;
+            margin: 0;
+        }
+
+.wrapper {
+    @include cf();
+    margin: 0 auto;
+    max-width: 940px;
+    //padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 26px;
+    padding-left: 40px;
+}
+    h1 {
+        background: #003594;
+        color: #FFFFFF;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 26px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        line-height: 32px;
+        margin-right: -40px;
+        margin-bottom: 36px;
+        margin-left: -40px;
+        padding-top: 20px;
+        padding-right: 40px;
+        padding-bottom: 20px;
+        padding-left: 40px;
+    }
+
+.main-nav {
+    @include cf();
+    margin: 0 auto;
+    max-width: 940px;
+}
+    .main-nav ul {
+        float: left;
+        list-style: none;
+    }
+        .main-nav ul li {
+            border-left: 1px solid #FFFFFF;
+            display: inline-block;
+            float: left;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+        }
+        .main-nav ul li:first-child {
+            border-left: none;
+            padding-left: 20px;
+        }
+            .main-nav ul li a {
+                color: rgba(0, 0, 0, .75);
+                display: block;
+                letter-spacing: 1px;
+                padding-top: 20px;
+                padding-right: 20px;
+                padding-bottom: 20px;
+                padding-left: 20px;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+            .main-nav ul li a:active,
+            .main-nav ul li a:hover,
+            .main-nav ul li a.active {
+                background: rgba(0, 0, 0, .75);
+                color: #FFFFFF;
+            }
+.content-wrapper {
+    background: #FFFFFF;
+}
+    .content-wrapper p {
+        color: rgba(0, 0, 0, .9);
+        font-family: sans-serif;
+        font-size: 16px;
+        line-height: 1.5em;
+        margin-bottom: 1.5em;
+    }

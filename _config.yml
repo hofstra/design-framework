@@ -1,0 +1,27 @@
+# Site settings
+title: Hofstra DRC Design Framework
+email: drc@hofstra.edu
+description: "Core design elements & styles for DRC project sites"
+baseurl: ""
+url: "http://hofstradrc.org"
+twitter_username:
+github_username:  hofstra
+google_analytics: false
+
+# Where things are
+destination:      ./_site
+# source:           ./_build
+
+# Handling Reading
+exclude:          ["templates", "Gemfile", "Gemfile.lock", "README.md", ".gitignore", "_source","ui/css/styles.css.map"]
+# _source contains precompiled SCSS files destined for /ui, which will be copied to _site
+
+# Conversion
+markdown:         kramdown
+
+# Outputting
+permalink: /:categories/:title/
+
+# Compensating for gh-pages project site
+baseurl: /design-framework
+# https://github.com/jekyll/jekyll/issues/332
