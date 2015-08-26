@@ -181,18 +181,18 @@ h1 {
   line-height: 1.25em; }
 
 .content-wrapper h3 {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.25em; }
 
 .content-wrapper h4 {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.25em;
   margin-bottom: 1.5em; }
 
 .content-wrapper p {
   color: rgba(0, 0, 0, 0.9);
   font-family: sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5em;
   margin-bottom: 1.5em; }
 
@@ -202,7 +202,7 @@ h1 {
 .content-wrapper li {
   color: rgba(0, 0, 0, 0.9);
   font-family: sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5em;
   margin-bottom: .75em; }
 
