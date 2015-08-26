@@ -23,7 +23,7 @@
             @content;
         }
     } @else {
-        @media all and (min-width: $mq) {
+        @media all and (max-width: $mq) {
             @content;
         }
     }

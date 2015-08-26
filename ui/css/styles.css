@@ -95,6 +95,17 @@ body {
   line-height: 42px;
   margin: 0; }
 
+@media all and (max-width: 940px) {
+  .brand-bar {
+    height: auto; }
+
+  .brand-logo {
+    display: block;
+    float: none; }
+
+  .brand-tagline {
+    display: block;
+    float: none; } }
 .wrapper {
   margin: 0 auto;
   max-width: 940px;
@@ -107,6 +118,10 @@ body {
   .wrapper:after {
     clear: both; }
 
+@media all and (max-width: 940px) {
+  .wrapper {
+    padding-right: 20px;
+    padding-left: 20px; } }
 h1 {
   background: #003594;
   color: #FFFFFF;
@@ -123,6 +138,17 @@ h1 {
   padding-bottom: 20px;
   padding-left: 40px; }
 
+@media all and (max-width: 940px) {
+  h1 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-right: -20px;
+    margin-bottom: 34px;
+    margin-left: -20px;
+    padding-top: 18px;
+    padding-right: 20px;
+    padding-bottom: 18px;
+    padding-left: 20px; } }
 .main-nav {
   margin: 0 auto;
   max-width: 940px; }
@@ -168,6 +194,17 @@ h1 {
   background: rgba(0, 0, 0, 0.75);
   color: #FFFFFF; }
 
+@media all and (max-width: 940px) {
+  .main-nav ul {
+    float: none; }
+
+  .main-nav ul li {
+    border-left: none;
+    display: block;
+    float: none; }
+
+  .main-nav ul li:first-child {
+    padding-left: 0; } }
 .content-wrapper {
   background: #FFFFFF;
   margin-bottom: 40px; }
@@ -206,6 +243,25 @@ h1 {
   line-height: 1.5em;
   margin-bottom: .75em; }
 
+@media all and (max-width: 940px) {
+  .content-wrapper h2,
+  .content-wrapper h3 {
+    font-size: 14px; }
+
+  .content-wrapper h2 {
+    font-size: 22px; }
+
+  .content-wrapper h3 {
+    font-size: 18px; }
+
+  .content-wrapper h4 {
+    font-size: 16px; }
+
+  .content-wrapper p {
+    font-size: 16px; }
+
+  .content-wrapper li {
+    font-size: 16px; } }
 .force-UTF-8 {
   content: "¡"; }
 
