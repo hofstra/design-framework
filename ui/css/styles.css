@@ -169,7 +169,8 @@ h1 {
   color: #FFFFFF; }
 
 .content-wrapper {
-  background: #FFFFFF; }
+  background: #FFFFFF;
+  margin-bottom: 40px; }
 
 .content-wrapper h2,
 .content-wrapper h3 {
