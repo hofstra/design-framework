@@ -16,3 +16,4 @@ HTML &amp; CSS for digital humanities project sites
 * [ ] JS-based collapsible mobile nav
 * [ ] Move tagline into body
 * [ ] Layout modules per [Trello board](https://trello.com/b/Zk76d1GZ/drc-projects-unified-design)
+  * [x] Tables / data table
