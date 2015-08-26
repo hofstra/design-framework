@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include head.html %}
+    <title>{{ page.title }}</title>
+</head>
+<body>
+<div class="outer">
+
+{% include brand-bar.html %}
+{% include main-nav.html %}
+{% include page-content.html %}
+    <div class="data-table">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <thead>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Education Level</th>
+                    <th>Research Domain</th>
+                    <th>URL</th>
+                    <th>Project Institution</th>
+                    <th>Project Topic</th>
+                    <th>Tags</th>
+                    <th>Wave Report</th>
+                    <th>Visual</th>
+                    <th>Auditory</th>
+                    <th>Fine Motor</th>
+                    <th>Cognitive</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+{% for project in site.categories.projects %}
+                <tr class="{% cycle 'odd', 'even' %}">
+                    <td>{{ project.title }}</td>
+                    <td>{{project.education_level}}</td>
+                    <td>{{project.research_domain}}</td>
+                    <td>{{project.site_url}}</td>
+                    <td>{{project.institution}}</td>
+                    <td>{{project.topic}}</td>
+                    <td>{% for tag in project.tags %}{{ tag }}{% if forloop.last == false %}, {% endif %}{% endfor %}</td>
+                    <td>{{project.wave_report}}</td>
+                    <td>{{project.visual}}</td>
+                    <td>{{project.auditory}}</td>
+                    <td>{{project.fine_motor}}</td>
+                    <td>{{project.cognitive}}</td>
+                    <td>{{ project.content }}</td>
+                </tr>
+{% endfor %}
+            </tbody>
+        </table>
+        <style type="text/css">
+            @media screen and (max-width: 940px) {
+                td:nth-of-type(1):before { content: "Project Name"; }
+                td:nth-of-type(2):before { content: "Education Level"; }
+                td:nth-of-type(3):before { content: "Research Domain"; }
+                td:nth-of-type(4):before { content: "URL"; }
+                td:nth-of-type(5):before { content: "Project Institution"; }
+                td:nth-of-type(6):before { content: "Project Topic"; }
+                td:nth-of-type(7):before { content: "Tags"; }
+                td:nth-of-type(8):before { content: "Wave Report"; }
+                td:nth-of-type(9):before { content: "Visual"; }
+                td:nth-of-type(10):before { content: "Auditory"; }
+                td:nth-of-type(11):before { content: "Fine Motor"; }
+                td:nth-of-type(12):before { content: "Cognitive"; }
+                td:nth-of-type(13):before { content: "Description"; }
+            }
+        </style>
+    </div>
+</div>
+{% include footer.html %}
+</body>
+</html>

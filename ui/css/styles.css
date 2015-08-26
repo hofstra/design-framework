@@ -112,7 +112,7 @@ body {
   margin: 0 auto;
   max-width: 940px;
   padding-right: 40px;
-  padding-bottom: 26px;
+  padding-bottom: 12px;
   padding-left: 40px; }
   .wrapper:before, .wrapper:after {
     content: "";
@@ -264,6 +264,88 @@ h1 {
 
   .content-wrapper li {
     font-size: 16px; } }
+.data-table {
+  margin-bottom: 40px; }
+
+.data-table table {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-collapse: collapse;
+  width: 100%; }
+
+.data-table table th {
+  background: #FFFFFF;
+  border-bottom: 1px solid #ddd;
+  font-size: 12px;
+  line-height: 1.25em;
+  padding-top: 8px;
+  padding-right: 6px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  text-align: left;
+  vertical-align: bottom; }
+
+.data-table table td {
+  font-size: 12px;
+  line-height: 1.25em;
+  padding-top: 12px;
+  padding-right: 10px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  vertical-align: top; }
+
+.data-table table tr.even td {
+  background: #FFFFFF; }
+
+.data-table table tr th:first-child,
+.data-table table tr td:first-child {
+  padding-left: 20px; }
+
+.data-table table tr th:last-child,
+.data-table table tr td:last-child {
+  padding-right: 20px; }
+
+@media all and (max-width: 940px) {
+  .data-table table,
+  .data-table table thead,
+  .data-table table tbody,
+  .data-table table th,
+  .data-table table td,
+  .data-table table tr {
+    display: block; }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px; }
+
+  .data-table table tr.even td {
+    background: none; }
+
+  .data-table table tr.odd td {
+    background: #FFFFFF; }
+
+  .data-table table tr th:first-child {
+    padding-left: 10px; }
+
+  .data-table table tr td,
+  .data-table table tr td:first-child,
+  .data-table table tr td:last-child {
+    /* Behave  like a "row" */
+    border: none;
+    position: relative;
+    padding-left: 50%;
+    padding-right: 20px; }
+
+  .data-table table td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 12px;
+    left: 10px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap; } }
 .force-UTF-8 {
   content: "¡"; }
 

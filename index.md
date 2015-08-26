@@ -5,7 +5,7 @@ title: Home
 ## Heading Level 2: List of Templates
 
 * [Article, No Header Image](/design-framework/article-no-header-image.html)
-* Another template
+* [Data Table](/design-framework/data-table.html)
 * Yet another template
 
 ### Heading Level 3: About the Design Framework

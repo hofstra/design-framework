@@ -4,35 +4,13 @@
 {% include head.html %}
     <title>{{ page.title }}</title>
 </head>
-<body><div class="outer">
+<body>
+<div class="outer">
 
-<div class="brand-bar">
-    <div class="brand-logo">
-        <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/ui/img/drc.logo.horizontal.png"
-            width="247"
-            height="42"
-            alt="Hofstra Digital Research Center" /></a>
-    </div>
-    <div class="brand-tagline">
-        <p>One sentence project tagline.</p>
-    </div>
+{% include brand-bar.html %}
+{% include main-nav.html %}
+{% include page-content.html %}
 </div>
-<div class="main-nav" role="navigation">
-    <ul>
-        <li><a href="{{ site.baseurl }}/">Home</a></li>
-        <li><a href="#"{% if page.active == 'about-the-project'%} class="active"{% endif %}>About the Project</a></li>
-        <li><a href="#">About the Team</a></li>
-        <li><a href="#">Contact Us</a></li>
-    </ul>
-</div>
-<div class="wrapper content-wrapper">
-    <h1>{{ page.title }}</h1>
-    {{ content }}
-</div></div>
-<div class="footer-wrapper">
-    <div class="footer">
-        <p>&copy; 2015, Hofstra DRC.</p>
-    </div>
-</div>
+{% include footer.html %}
 </body>
 </html>
