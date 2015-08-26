@@ -122,7 +122,10 @@ h1 {
   padding-bottom: 20px;
   padding-left: 20px;
   text-decoration: none;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s; }
 
 .main-nav ul li a:active,
 .main-nav ul li a:hover,
@@ -133,12 +136,39 @@ h1 {
 .content-wrapper {
   background: #FFFFFF; }
 
+.content-wrapper h2,
+.content-wrapper h3 {
+  margin-bottom: 16px; }
+
+.content-wrapper h2 {
+  font-size: 24px;
+  line-height: 1.25em; }
+
+.content-wrapper h3 {
+  font-size: 18px;
+  line-height: 1.25em; }
+
+.content-wrapper h4 {
+  font-size: 16px;
+  line-height: 1.25em;
+  margin-bottom: 1.5em; }
+
 .content-wrapper p {
   color: rgba(0, 0, 0, 0.9);
   font-family: sans-serif;
   font-size: 16px;
   line-height: 1.5em;
   margin-bottom: 1.5em; }
+
+.content-wrapper ul {
+  padding-bottom: .75em; }
+
+.content-wrapper li {
+  color: rgba(0, 0, 0, 0.9);
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  margin-bottom: .75em; }
 
 .force-UTF-8 {
   content: "¡"; }
