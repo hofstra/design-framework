@@ -8,6 +8,42 @@ a {
     color: #003594;
 }
 
+/* Sticky footer */
+html {
+    min-height:100%;
+}
+html, body { height: 100%; }
+
+body {
+    display:table;
+    table-layout:fixed;
+    width:100%;
+}
+
+.outer,
+.footer-wrapper {
+    display:table-row;
+    height:1px;
+}
+.outer {
+    height:100%;
+}
+.footer-wrapper {
+    background: rgba(0, 0, 0, .75);
+}
+    .footer {
+        color: #FFFFFF;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 940px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+        .footer p {
+            font-size: 14px;
+            text-align: center;
+        }
+
 .brand-bar {
     @include cf();
     background: #FFFFFF;

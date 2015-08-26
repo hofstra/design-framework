@@ -4,11 +4,11 @@
 {% include head.html %}
     <title>{{ page.title }}</title>
 </head>
-<body>
+<body><div class="outer">
 
 <div class="brand-bar">
     <div class="brand-logo">
-        <a href="/"><img src="{{ site.baseurl }}/ui/img/drc.logo.horizontal.png"
+        <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/ui/img/drc.logo.horizontal.png"
             width="247"
             height="42"
             alt="Hofstra Digital Research Center" /></a>
@@ -28,7 +28,11 @@
 <div class="wrapper content-wrapper">
     <h1>{{ page.title }}</h1>
     {{ content }}
+</div></div>
+<div class="footer-wrapper">
+    <div class="footer">
+        <p>&copy; 2015, Hofstra DRC.</p>
+    </div>
 </div>
-
 </body>
 </html>
