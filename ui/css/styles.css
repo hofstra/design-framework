@@ -207,6 +207,21 @@ h1 {
 
   .main-nav ul li:first-child {
     padding-left: 0; } }
+.header-wrapper {
+  margin: 0 auto;
+  max-width: 940px;
+  width: 100%; }
+  .header-wrapper:before, .header-wrapper:after {
+    content: "";
+    display: table; }
+  .header-wrapper:after {
+    clear: both; }
+
+.header-wrapper img {
+  display: block;
+  height: auto;
+  width: 100%; }
+
 .content-wrapper {
   background: #FFFFFF;
   margin-bottom: 40px; }
@@ -349,6 +364,31 @@ h1 {
     width: 45%;
     padding-right: 10px;
     white-space: nowrap; } }
+figure {
+  display: block;
+  height: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+  max-width: 800px;
+  width: 100%; }
+
+figure > a {
+  display: block; }
+
+figure img {
+  display: block;
+  height: auto;
+  margin-bottom: 20px;
+  width: 100%; }
+
+figure figcaption {
+  font-size: 14px;
+  font-style: italic; }
+
+@media all and (max-width: 940px) {
+  figure {
+    margin-bottom: 20px; } }
 .force-UTF-8 {
   content: "¡"; }
 

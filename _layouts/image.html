@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include head.html %}
+    <title>{{ page.title }}</title>
+</head>
+<body>
+<div class="outer">
+
+{% include brand-bar.html %}
+{% include main-nav.html %}
+    {% comment %}
+    This resembles _includes/page-content.html
+    {% endcomment %}
+    <div class="wrapper content-wrapper">
+        <h1>{{ page.title }}</h1>
+        <figure>
+            <a href="{{ page.img }}"><img src="{{ page.img }}" alt="{{ page.caption }}" /></a>
+            {% if page.caption %}<figcaption>{{ page.caption }}</figcaption>{% endif %}
+        </figure>
+        {{ content }}
+    </div>
+</div>
+{% include footer.html %}
+</body>
+</html>

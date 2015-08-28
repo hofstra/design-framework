@@ -182,6 +182,17 @@
                 padding-left: 0;
             }
 }
+    .header-wrapper {
+        @include cf();
+        margin: 0 auto;
+        max-width: 940px;
+        width: 100%;
+    }
+        .header-wrapper img {
+            display: block;
+            height: auto;
+            width: 100%;
+        }
     .content-wrapper {
         background: #FFFFFF;
         margin-bottom: 40px;
@@ -327,4 +338,31 @@
                 padding-right: 10px;
                 white-space: nowrap;
             }
+}
+    figure {
+        display: block;
+        height: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        margin-left: auto;
+        max-width: 800px;
+        width: 100%;
+    }
+        figure > a {
+            display: block;
+        }
+        figure img {
+            display: block;
+            height: auto;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        figure figcaption {
+            font-size: 14px;
+            font-style: italic;
+        }
+@include mq(940px) {
+    figure {
+        margin-bottom: 20px;
+    }
 }
