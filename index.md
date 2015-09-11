@@ -8,6 +8,8 @@ title: Home
 * [Article, Header Image](/design-framework/article-header-image.html)
 * [Data Table](/design-framework/data-table.html)
 * [Image Entry](/design-framework/images/urban-coyote)
+* [Category Index](/design-framework/category-index.html) (and tag cloud, based on limited examples)
+* [Map](/design-framework/map.html)
 * Yet another template
 
 ### Heading Level 3: About the Design Framework

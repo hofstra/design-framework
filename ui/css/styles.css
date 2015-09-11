@@ -389,6 +389,39 @@ figure figcaption {
 @media all and (max-width: 940px) {
   figure {
     margin-bottom: 20px; } }
+.two-col:before, .two-col:after {
+  content: "";
+  display: table; }
+.two-col:after {
+  clear: both; }
+
+.two-col > div {
+  float: left; }
+
+.two-col > div:first-child {
+  padding-right: 20px;
+  width: 65%; }
+
+.two-col > div:last-child {
+  padding-left: 20px;
+  width: 35%; }
+
+@media all and (max-width: 940px) {
+  .two-col > div:first-child,
+  .two-col > div:last-child {
+    float: none;
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%; } }
+#map-container {
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  background: #EFEFEF;
+  clear: both;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 400px; }
+
 .force-UTF-8 {
   content: "¡"; }
 
