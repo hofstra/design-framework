@@ -15,7 +15,7 @@
     <div class="wrapper content-wrapper">
         <h1>{{ page.title }}</h1>
         <figure>
-            <a href="{{ page.img }}"><img src="{{ page.img }}" alt="{{ page.caption }}" /></a>
+            <a class="fancybox" href="{{ page.img }}"><img src="{{ page.img }}" alt="{{ page.caption }}" /></a>
             {% if page.caption %}<figcaption>{{ page.caption }}</figcaption>{% endif %}
         </figure>
         {{ content }}

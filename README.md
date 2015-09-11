@@ -13,10 +13,9 @@ HTML &amp; CSS for digital humanities project sites
 * [x] Footer
 * [ ] Footer content styles
 * [x] Mobile nav & header
-* [ ] jQuery
-  * [ ] JS-based collapsible mobile nav
-* [ ] Move tagline into body
+* [x] jQuery
+  * [x] JS-based collapsible mobile nav
 * [ ] Layout modules per [Trello board](https://trello.com/b/Zk76d1GZ/drc-projects-unified-design)
   * [x] Tables / data table
-  * [ ] Image entry
-    * [ ] Add support for fancybox lightbox
+  * [x] Image entry
+    * [x] Add support for fancybox lightbox

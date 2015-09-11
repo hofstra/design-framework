@@ -172,6 +172,9 @@ h1 {
   font-size: 12px;
   font-weight: 400; }
 
+.show-mobile-nav {
+  display: none; }
+
 .main-nav ul li:first-child {
   border-left: none;
   padding-left: 20px; }
@@ -198,12 +201,43 @@ h1 {
 
 @media all and (max-width: 940px) {
   .main-nav ul {
+    border: 0 !important;
+    clip: rect(0 0 0 0) !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
     float: none; }
+
+  .main-nav ul.show {
+    clip: none !important;
+    height: auto !important;
+    margin: 0 !important;
+    position: static !important;
+    width: auto !important; }
 
   .main-nav ul li {
     border-left: none;
     display: block;
     float: none; }
+
+  .show-mobile-nav {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1em;
+    text-align: center; }
+
+  .show-mobile-nav a {
+    color: rgba(0, 0, 0, 0.75);
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    text-transform: uppercase; }
 
   .main-nav ul li:first-child {
     padding-left: 0; } }

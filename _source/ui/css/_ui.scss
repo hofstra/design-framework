@@ -147,7 +147,10 @@
                 font-size: 12px;
                 font-weight: 400;
             }
-            .main-nav ul li:first-child {
+            .show-mobile-nav {
+                display: none;
+            }
+            .main-nav ul li:first-child { // Assumes :first-child is the show-mobile-nav li
                 border-left: none;
                 padding-left: 20px;
             }
@@ -171,13 +174,33 @@
                 }
 @include mq(940px) {
         .main-nav ul {
+            @include accessibility;
             float: none;
+        }
+        .main-nav ul.show {
+            @include reverse-accessibility;
         }
             .main-nav ul li {
                 border-left: none;
                 display: block;
                 float: none;
             }
+            .show-mobile-nav {
+                display: block;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 1em;
+                text-align: center;
+            }
+                .show-mobile-nav a {
+                    color: rgba(0, 0, 0, .75);
+                    display: block;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
             .main-nav ul li:first-child {
                 padding-left: 0;
             }
