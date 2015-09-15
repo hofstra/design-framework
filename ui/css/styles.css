@@ -475,7 +475,7 @@ figure figcaption {
     height: 100%; }
 
 hr {
-  border: 0;
+  border: 1px solid #eee;
   margin-bottom: 20px; }
 
 .force-UTF-8 {
