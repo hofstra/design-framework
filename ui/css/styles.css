@@ -474,6 +474,10 @@ figure figcaption {
     width: 100%;
     height: 100%; }
 
+hr {
+  border: 0;
+  margin-bottom: 20px; }
+
 .force-UTF-8 {
   content: "¡"; }
 
