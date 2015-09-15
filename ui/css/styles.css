@@ -475,7 +475,10 @@ figure figcaption {
     height: 100%; }
 
 hr {
-  border: 1px solid #eee;
+  border: 0;
+  background-color: #eee;
+  color: #eee;
+  height: 2px;
   margin-bottom: 20px; }
 
 .force-UTF-8 {
