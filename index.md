@@ -30,7 +30,7 @@ Tags are also populated as a list of text values, but unlike categories, they do
 
 For tagged entries to appear on a tag page, corresponding <span class="code">tags/_posts</span> files must be created.
 
-#### Index
+#### index
 
 Replacing an earlier use of the Category field with Index, we can output posts in a sorted index with appropriate headings.
 

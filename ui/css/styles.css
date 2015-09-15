@@ -30,6 +30,10 @@ body {
 a {
   color: #003594; }
 
+.code {
+  background: #efefef;
+  font-family: monospace; }
+
 /* Sticky footer */
 html {
   min-height: 100%; }
