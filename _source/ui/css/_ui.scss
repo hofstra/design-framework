@@ -179,11 +179,11 @@
                 }
 @include mq(940px) {
         .main-nav ul {
-            @include accessibility;
+            /*@include accessibility;*/
             float: none;
         }
         .main-nav ul.show {
-            @include reverse-accessibility;
+            /*@include reverse-accessibility;*/
         }
             .main-nav ul li {
                 border-left: none;
