@@ -113,19 +113,19 @@ body {
     display: block;
     float: none; } }
 .wrapper,
-.meta {
+.meta > div {
   margin: 0 auto;
   max-width: 940px;
   padding-right: 40px;
   padding-bottom: 12px;
   padding-left: 40px; }
   .wrapper:before, .wrapper:after,
-  .meta:before,
-  .meta:after {
+  .meta > div:before,
+  .meta > div:after {
     content: "";
     display: table; }
   .wrapper:after,
-  .meta:after {
+  .meta > div:after {
     clear: both; }
 
 @media all and (max-width: 940px) {
