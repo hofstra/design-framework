@@ -112,16 +112,20 @@ body {
   .brand-tagline {
     display: block;
     float: none; } }
-.wrapper {
+.wrapper,
+.meta {
   margin: 0 auto;
   max-width: 940px;
   padding-right: 40px;
   padding-bottom: 12px;
   padding-left: 40px; }
-  .wrapper:before, .wrapper:after {
+  .wrapper:before, .wrapper:after,
+  .meta:before,
+  .meta:after {
     content: "";
     display: table; }
-  .wrapper:after {
+  .wrapper:after,
+  .meta:after {
     clear: both; }
 
 @media all and (max-width: 940px) {
