@@ -92,7 +92,8 @@
 }
 
     .wrapper,
-    .meta > div {
+    .meta > div,
+    .footer {
         @include cf();
         margin: 0 auto;
         max-width: 940px;

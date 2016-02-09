@@ -113,7 +113,8 @@ body {
     display: block;
     float: none; } }
 .wrapper,
-.meta > div {
+.meta > div,
+.footer {
   margin: 0 auto;
   max-width: 940px;
   padding-right: 40px;
@@ -121,11 +122,14 @@ body {
   padding-left: 40px; }
   .wrapper:before, .wrapper:after,
   .meta > div:before,
-  .meta > div:after {
+  .meta > div:after,
+  .footer:before,
+  .footer:after {
     content: "";
     display: table; }
   .wrapper:after,
-  .meta > div:after {
+  .meta > div:after,
+  .footer:after {
     clear: both; }
 
 @media all and (max-width: 940px) {
