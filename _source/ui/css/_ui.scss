@@ -101,8 +101,12 @@
         padding-bottom: 12px;
         padding-left: 40px;
     }
+        .footer {
+            padding-bottom: 40px;
+        }
 @include mq(940px) {
-    .wrapper {
+    .wrapper,
+    .footer {
         padding-right: 20px;
         padding-left: 20px;
     }
