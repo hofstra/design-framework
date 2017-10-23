@@ -13,7 +13,21 @@ destination:      ./_site
 # source:           ./_build
 
 # Handling Reading
-exclude:          ["templates", "Gemfile", "Gemfile.lock", "README.md", ".gitignore", "_source","ui/css/styles.css.map"]
+include:
+- _pages
+exclude:
+- templates
+- Gemfile
+- Gemfile.lock
+- README.md
+- ".gitignore"
+- _source"
+- "ui/css/styles.css.map"
+- preflight
+
+sass:
+  sass_dir: ui/css
+
 # _source contains precompiled SCSS files destined for /ui, which will be copied to _site
 
 # Conversion
